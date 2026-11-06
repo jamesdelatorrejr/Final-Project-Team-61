@@ -1,0 +1,62 @@
+[
+  {
+	"id": "d1-01", "sender": "IT Service Desk", "address": "support@smellsphishy-it-help.example",
+	"subject": "Action required: mailbox closes in 30 minutes",
+	"body": "Your Smells Phishy Inc. mailbox has exceeded its storage limit.\n\nTo avoid losing your email history, verify your username and password immediately using the link below. Do not contact the help desk. This automated process cannot be delayed.\n\nIT Service Desk",
+	"link_label": "Verify my Smells Phishy account", "link_target": "https://smellsphishy-login.example/verify",
+	"attachment": "", "phishing": true,
+	"explanation": "The sender uses smellsphishy-it-help.example instead of our smellsphishy.example domain, and the link leads to another unrelated domain. The threat of immediate closure and instruction not to contact IT add pressure. Use the known company portal or contact IT independently. Never enter credentials through this message."
+  },
+  {
+	"id": "d1-02", "sender": "Maya Chen - Operations", "address": "maya.chen@smellsphishy.example",
+	"subject": "Updated room for tomorrow's team meeting",
+	"body": "Hi team,\n\nTomorrow's 10 AM operations meeting has moved from Room 204 to Room 206. The agenda is still project updates and next week's staffing.\n\nNo action is needed. Your existing calendar invitation has been updated.\n\nThanks,\nMaya",
+	"link_label": "", "link_target": "", "attachment": "", "phishing": false,
+	"explanation": "This routine internal update matches the company domain and asks for no credentials, payment, or unusual action. There are no links or attachments. Approving avoids disrupting ordinary work. A familiar sender alone is not proof of safety. Consider the request and context too."
+  },
+  {
+	"id": "d1-03", "sender": "Smells Phishy People Team", "address": "people@smellsphishy.example",
+	"subject": "Your new employee handbook is ready",
+	"body": "Welcome to Smells Phishy Inc.,\n\nThe employee handbook is available on our internal portal. It covers working hours, leave requests, and office contacts. You can also find it by opening the company portal from your saved bookmark and choosing People > Handbook.\n\nPlease review it before Friday.\n\nThe People Team",
+	"link_label": "Read the employee handbook", "link_target": "https://portal.smellsphishy.example/people/handbook",
+	"attachment": "", "phishing": false,
+	"explanation": "The sender and destination match the company domain, and this is an expected onboarding request with an independent route through the portal. A deadline by itself does not make a message phishing. Read the full destination rather than relying only on link text."
+  },
+  {
+	"id": "d1-04", "sender": "Smells Phishy Payroll", "address": "payroll@smellsph1shy.example",
+	"subject": "Payroll correction - confirm your bank details",
+	"body": "Dear employee,\n\nWe could not process your next salary payment. Confirm your bank account number and portal password today to prevent a delay.\n\nUse the secure payroll form below. Your manager cannot resolve this issue.\n\nPayroll Administration",
+	"link_label": "https://portal.smellsphishy.example/payroll", "link_target": "https://payroll-smellsphishy.example/confirm",
+	"attachment": "", "phishing": true,
+	"explanation": "The address spells smellsph1shy with a one, and the displayed link text hides a different destination. The request combines banking details and a password with salary pressure. Quarantine it and verify payroll issues through a known internal contact."
+  },
+  {
+	"id": "d1-05", "sender": "Parcel Dispatch", "address": "dispatch@parcel-notice.example",
+	"subject": "Delivery failed: open your shipping receipt",
+	"body": "We attempted a delivery to your office today.\n\nOpen the attached receipt and run the included delivery tool to schedule another attempt. A storage fee will apply if you do not respond today.\n\nDispatch Team",
+	"link_label": "", "link_target": "", "attachment": "Shipping_Receipt.pdf.exe", "phishing": true,
+	"explanation": "Shipping_Receipt.pdf.exe ends in .exe: it is an executable, not a PDF. An unexpected delivery asking you to run software is suspicious, especially with a fee threat. Do not run it. Verify deliveries using the carrier's independently located website."
+  },
+  {
+	"id": "d1-06", "sender": "Facilities", "address": "facilities@smellsphishy.example",
+	"subject": "Urgent: kitchen closed for water leak",
+	"body": "Hello everyone,\n\nA water leak means the second-floor kitchen is closed until tomorrow morning. Please use the first-floor kitchen and keep the hallway clear for maintenance.\n\nIf you have questions, call the facilities extension listed in the company directory.\n\nThank you,\nFacilities",
+	"link_label": "", "link_target": "", "attachment": "", "phishing": false,
+	"explanation": "Urgency is a clue to investigate, not automatic proof of phishing. This message gives a plausible workplace instruction, uses the company domain, and directs questions to the established directory. It requests no sensitive data, software installation, or payment."
+	},
+	{
+	"id": "d1-07", "sender": "Smells Phishy Benefits", "address": "benefits@smellsphishy.example",
+	"subject": "Benefits overview from orientation",
+	"body": "Hello,\n\nAttached is the benefits overview requested during orientation. It summarizes medical plans, paid leave, and enrollment dates. No reply or sign-in is required.\n\nYou can also find the same document through the People section of the saved company portal.\n\nBenefits Team",
+	"link_label": "", "link_target": "", "attachment": "Benefits_Overview.pdf", "phishing": false,
+	"explanation": "The sender uses the company domain, the request matches onboarding, and the attachment ends in .pdf rather than a disguised executable. The message asks for no credentials or payment and provides an independent route through the saved company portal. Attachments still require inspection. Context and the final extension support approving this one."
+	},
+	{
+	"id": "d1-08", "sender": "Morgan via Secure Share", "address": "morgan@smellsphishy-share.example",
+	"subject": "Confidential staffing plan shared with you",
+	"body": "A confidential staffing plan has been shared with you.\n\nSign in with your company email and password before the document expires today. Do not forward this notice or ask the sender for another copy.\n\nSecure Share Notifications",
+	"link_label": "Open Q4 staffing plan", "link_target": "https://smellsphishy-docs.example/sign-in",
+	"attachment": "", "phishing": true,
+	"explanation": "The display name mentions Morgan, but the sender is on smellsphishy-share.example rather than the company domain. The link leads to another unrelated domain and requests company credentials under time pressure. Verify the request with Morgan through a known channel and quarantine this message."
+  }
+]

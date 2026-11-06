@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d1b19">
+  <title>$GODOT_PROJECT_NAME</title>
+  $GODOT_HEAD_INCLUDE
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #1d1b19;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+    }
+
+    #canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      outline: 0;
+      touch-action: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" tabindex="0"></canvas>
+  <script src="$GODOT_URL"></script>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const engine = new Engine($GODOT_CONFIG);
+
+    canvas.addEventListener("pointerdown", () => canvas.focus());
+    engine.startGame({ canvas }).catch((error) => console.error(error));
+  </script>
+</body>
+</html>
