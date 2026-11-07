@@ -359,7 +359,7 @@ func start_shift() -> void:
 	reader.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	reader.add_theme_constant_override("separation", 7)
 	reading_scroll.add_child(reader)
-	feedback = label_into(page, "Select a message.", 16)
+	feedback = label_into(page, "Make a decision.", 16)
 	feedback.custom_minimum_size.y = 22
 	var actions := HBoxContainer.new()
 	actions.add_theme_constant_override("separation", 12)
@@ -848,7 +848,7 @@ func show_inbox() -> void:
 	selected = -1
 	clear_children(reader)
 	rich_into(reader, "[b]INBOX[/b]", 28)
-	bold_label_into(reader, "SELECT A MESSAGE", 16)
+	bold_label_into(reader, "MAKE A DECISION", 16)
 	var inbox_art := office_into(reader)
 	inbox_art.custom_minimum_size = Vector2(500, 370)
 	inbox_art.size_flags_horizontal = Control.SIZE_EXPAND_FILL
